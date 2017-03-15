@@ -1,4 +1,5 @@
 var randomNumber = Math.floor(Math.random() * (3016 - 1 + 1)) + 1;
+console.log(randomNumber);
 $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
   $('#randomOptionHistory').change(changeOptions2);
