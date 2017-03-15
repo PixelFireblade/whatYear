@@ -16,6 +16,7 @@ function changeOptions () {
     
     
   }
+}
   function changeOptions2 () {
   
   //When Random is selected
@@ -28,3 +29,4 @@ function changeOptions () {
     
     
   }
+}
