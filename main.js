@@ -1,7 +1,10 @@
-
+var randomNumber = Math.floor(Math.random() * (3016 - 1 + 1)) + 1;
 $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
   $('#randomOptionHistory').change(changeOptions2);
+  $("#findYear").click(function() {
+    $("p").text($(randomNumber).val());
+ })
 });
   
 function changeOptions () {
