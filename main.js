@@ -5,6 +5,7 @@ $ ( document ).ready(function(){
   $('#randomOptionHistory').change(changeOptions2);
   $("#findYear").click(function() {
    $("p").text($(randomNumber).val());
+   document.getElementById('finalYear').innerHTML = randomNumber;
  })
 });
   
