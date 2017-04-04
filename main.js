@@ -1,4 +1,7 @@
 var randomNumber = Math.floor(Math.random() * (3016 - 1 + 1)) + 1;
+if randomNumber > 1000 {
+  radomNumber = randomNumber + "BC"
+}
 console.log(randomNumber);
 $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
