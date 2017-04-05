@@ -7,8 +7,10 @@ $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
   $('#randomOptionHistory').change(changeOptions2);
   $("#findYear").click(function() {
-    $("p").text(randomNumber);
     var randomNumber = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
+   })
+  $("#findYear").click(function() {
+    $("p").text(randomNumber);
  })
 });
   
