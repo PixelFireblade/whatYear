@@ -1,15 +1,11 @@
-var randomNumber = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
-//if randomNumber > 1000 {
-  //radomNumber = randomNumber + "BC"
-//}
-console.log(randomNumber);
+
+
 $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
   $('#randomOptionHistory').change(changeOptions2);
   $("#findYear").click(function() {
     var randomNumber = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
-   })
-  $("#findYear").click(function() {
+    console.log(randomNumber);
     $("p").text(randomNumber);
  })
 });
