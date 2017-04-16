@@ -5,16 +5,13 @@ $ ( document ).ready(function(){
   $('#randomOptionHistory').change(changeOptions2);
   $("#findYear").click(function() {
     
+    var year = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
+    
     console.log(year);
     
     
-    if ($('#randomOptionHistory').prop('checked', true)) {
-      var year = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
-    }
+
     
-    else if ($('#choiceOptionHistory').prop('checked', true)){
-      var year = $('#choiceOptionHistory2').val();
-    }
     $("p").text(year);
  })
 });
