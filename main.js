@@ -4,9 +4,13 @@ $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
   $('#randomOptionHistory').change(changeOptions2);
   $("#findYear").click(function() {
-    var randomNumber = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
-    console.log(randomNumber);
-    $("p").text(randomNumber);
+    var year = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
+    console.log(year);
+    
+    if ($('#choiceOptionHistory').prop('checked', true)){
+      var year = $('#choiceOptionHistory2').val();
+    }
+    $("p").text(year);
  })
 });
   
