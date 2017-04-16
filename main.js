@@ -4,10 +4,15 @@ $ ( document ).ready(function(){
   $('#choiceOptionHistory').change(changeOptions);
   $('#randomOptionHistory').change(changeOptions2);
   $("#findYear").click(function() {
-    var year = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
+    
     console.log(year);
     
-    if ($('#choiceOptionHistory').prop('checked', true)){
+    
+    if ($('#randomOptionHistory').prop('checked', true)) {
+      var year = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
+    }
+    
+    else if ($('#choiceOptionHistory').prop('checked', true)){
       var year = $('#choiceOptionHistory2').val();
     }
     $("p").text(year);
