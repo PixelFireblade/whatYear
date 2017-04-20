@@ -6,6 +6,7 @@ $ ( document ).ready(function(){
   $("#findYear").click(function() {
     
     var year = Math.floor(Math.random() * (2017 - 1 + 1)) + 1;
+    var year = year + " AD"
     
     console.log(year);
     
