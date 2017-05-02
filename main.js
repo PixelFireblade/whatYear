@@ -13,7 +13,7 @@ $ ( document ).ready(function(){
     else if ($('#randomOptionHistory').prop('checked', true)) {
       var year = Math.floor(Math.random() * (3017 - 1 + 1)) + 1;
       if(year > 1017) {
-        var year - year - 1000;
+        var year = year - 1000;
         var year = year + " AD";
       }
       else {
